@@ -9,20 +9,21 @@ services:
     ports: 
       - '5432:5432'
     volumes:
-      - courses-db:/var/lib/postgresql/data
+      - courses:/var/lib/postgresql/data
 
-  addressbook:
+  testcodemonday:
     build:
       context: .
     environment:
-      DB_SCHEMA: postgres
+      DB_SCHEMA: courses
       DB_USER: postgres
-      DB_PASSWORD: postgres
+      DB_PASSWORD: taolandNL123!
       DB_HOST: postgres
+      DATABASE_URL: "postgres://postgres:taolandNL123@db:5432/courses"
     depends_on:
       - postgres
     ports:
       - '3000:3000'
         
 volumes:
-  courses-db:
+  courses:
