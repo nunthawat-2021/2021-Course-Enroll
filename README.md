@@ -1,9 +1,9 @@
 # 2021-Course-Enroll
 
-#Install Package
+**#Install Package**
 
 npm install
 
-#Run Project
+**#Run Project**
 
 npm run dev
