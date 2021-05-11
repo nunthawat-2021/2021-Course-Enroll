@@ -2,7 +2,7 @@
 
 const env = {
   PORT: process.env.PORT || 8082,
-  DATABASE_URL: process.env.DATABASE_URL || 'jdbc:postgresql://localhost:5432/sequelize_blog_post',
+  DATABASE_URL: process.env.DATABASE_URL || 'jdbc:postgresql://localhost:5432/courses',
   DATABASE_NAME: process.env.DATABASE_NAME || 'courses',
   DATABASE_HOST: process.env.DATABASE_HOST || 'localhost',
   DATABASE_USERNAME: process.env.DATABASE_USERNAME || 'postgres',

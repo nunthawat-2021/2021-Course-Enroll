@@ -26,3 +26,16 @@ db.sequelize.sync().then(() => {
     console.log('Express listening on port:', PORT);
   });
 });
+
+let server;
+module.exports = {
+  start(port) {
+    server = app.listen(port, () => {
+      console.log(`App started on port ${port}`);
+    });
+    return app;
+  },
+  stop() {
+    server.close();
+  }
+};

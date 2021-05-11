@@ -1,13 +1,14 @@
-FROM node:14
+FROM node:10
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY package*.json ./
+COPY ./package.json .
+COPY ./package-lock.json .
 
 RUN npm install
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 3000
 
-CMD [ "npm", "run","dev"]
+CMD npm start
