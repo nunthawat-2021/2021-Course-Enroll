@@ -1,9 +1,12 @@
 # 2021-Course-Enroll
 
-**#Install Package**
 
+## Project setup
+```
 npm install
+```
 
-**#Run Project**
-
+### Compiles and hot-reloads for development
+```
 npm run dev
+```
